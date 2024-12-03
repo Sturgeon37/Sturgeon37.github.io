@@ -8,8 +8,10 @@ function verify() {
     else { type = "Не високосный"}
     check = true
     vek = Math.ceil(year / 100)
-    result = type,vek
+    result = type
+    result0 = vek
     document.getElementById("result").value = result;
+    document.getElementById("result0").value = result0;
 }
 
 function send() {
@@ -21,6 +23,7 @@ function send() {
 }
 
 let result;
+let result0;
 let check;
 
 const elementA = document.getElementById("year");
