@@ -1,22 +1,14 @@
 function verify() {
-    console.log("a, b, c")
-    let a = parseInt(elementA.value);
-    let b = parseInt(elementB.value);
-    let c = parseInt(elementC.value);
-    console.log(a, b, c)
+    console.log("year")
+    let year = parseInt(elementA.value);
+    console.log(year)
 
-    let low, high
-    if (a < b) { low = a;    high = b;  }
-    else { low = b; high = a; }
-
-    if (c >= low && c <= high) {
-        result = "С принадлежит заданному диапазону"
-        check = true;
-    }
-    else {
-        result = "С не принадлежит заданному диапазону"
-        check = false;
-    }
+    let vek, type
+    if ((year / 4) == 0) { type = "Високосный"  }
+    else { type = "Не високосный"}
+    check = true
+    vek = year/100
+    result = type,vek
     document.getElementById("result").value = result;
 }
 
@@ -28,14 +20,10 @@ function send() {
     }
 }
 
-
-
 let result;
 let check;
 
-const elementA = document.getElementById("a");
-const elementB = document.getElementById("b");
-const elementC = document.getElementById("c");
+const elementA = document.getElementById("year");
 
 const elementVerify = document.getElementById("verify");
 elementVerify.addEventListener('click', verify);
