@@ -4,10 +4,10 @@ function verify() {
     console.log(year)
 
     let vek, type
-    if ((year / 4) == 0) { type = "Високосный"  }
+    if ((year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0)) { type = "Високосный"  }
     else { type = "Не високосный"}
     check = true
-    vek = year/100
+    vek = Math.ceil(year / 100)
     result = type,vek
     document.getElementById("result").value = result;
 }
