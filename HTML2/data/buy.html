@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Магазин шапок</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин Шапок</title>
+
+    <!-- Подключение Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="example.css"> <!-- Ваш собственный CSS файл -->
+</head>
+<body>
+
+    <header class="bg-dark text-white text-center py-4">
+        <h1>Добро пожаловать в Магазин Шапок</h1>
+    </header>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Переключить навигацию">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="./examle.html">Главная </a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="./buy.html">Покупки</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./about.html">О нас</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+ <!--   <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="./examle.html">Главная</a>
+                <li class="nav-item active">
+                    <a class="navbar-brand" href="./buy.html">Покупки</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./about.html">О нас</a>
+                </li>
+            </ul>
+        </div>
+    </nav>-->
+
+<div class="container my-4">
+
+
+    <form action="https://www.bing.com/search?" id="UserEnter" name="UserEnter" target="_blank">
+        <h2>Оформление заказа<input type="hidden"  name="q" value="search"></h2>
+        <div class="form-group">
+            <label for="name">Имя</label>
+            <input type="text" class="form-control" id="name" name="name" value="Иван">
+        </div>
+
+        <div class="form-group">
+            <label for="email">Электронная почта</label>
+            <input type="email" class="form-control" id="email" name="email" value="Ivan@com">
+        </div>
+
+        <div class="form-group">
+                    <p>Место проживания:
+                        <input type="Radio" name="place" value="Moscow">Москва
+                        <input type="Radio" name="place" value="Nizhny" checked >Нижний
+                    </p>
+        </div>
+
+        <div class="form-group">
+            <label for="hat">Выберите шапку</label>
+            <select class="form-control" id="hat" name="hat" required>
+                <option value="hat1">Шапка 1</option>
+                <option value="hat2">Шапка 2</option>
+                <option value="hat3">Шапка 3</option>
+                <option value="hat3">Шапка 4</option>
+                <option value="hat3">Шапка 5</option>
+                <option value="hat3">Шапка 6</option>
+                <option value="hat3">Шапка 7</option>
+                <option value="hat3">Шапка 8</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="quantity">Количество</label>
+            <input type="number" class="form-control" id="quantity" name="quantity" min="1" value="1">
+        </div>
+
+        <button type="submit" class="btn btn-primary">Отправить заказ</button>
+    </form>
+</div>
+    <footer class="text-center py-4">
+        <p>&copy; 2024 Магазин Шапок</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

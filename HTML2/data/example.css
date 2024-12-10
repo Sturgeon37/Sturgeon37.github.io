@@ -1,0 +1,78 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+     padding-top: 100px; /* Отступ, чтобы контент не накладывался на навигацию */
+}
+.navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000; /* Чтобы навигация всегда была сверху */
+        }
+.image {
+    width: 200px; /* Фиксированная ширина */
+    height: 150px; /* Фиксированная высота */
+    object-fit: cover; /* Сохранение пропорций при обрезке */
+}
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    font-family: 'Georgia', serif; /* Другой стиль шрифта */
+}
+
+h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav {
+    margin: 20px 0;
+}
+
+nav a {
+    margin: 0 15px;
+    color: #333;
+    text-decoration: none;
+    font-family: 'Verdana', sans-serif; /* Другой стиль шрифта для навигации */
+}
+
+.hat {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+    margin: 20px 0;
+    background-color: #fff;
+    font-family: 'Tahoma', sans-serif; /* Шрифт для карточек товаров */
+}
+
+.hat h2 {
+    font-size: 1.8em;
+    font-weight: normal; /* Нормальный вес для заголовков продуктов */
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.9em;
+    font-family: 'Courier New', monospace; /* Моноширинный шрифт для подвала */
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Цвет кнопки */
+    color: white; /* Цвет текста */
+    text-align: center;
+    text-decoration: none; /* Убираем подчеркивание */
+    border-radius: 5px; /* Скругление углов */
+}
+
+.button:hover {
+    background-color: #45a049; /* Цвет при наведении */
+}
